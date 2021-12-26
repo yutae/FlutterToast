@@ -88,9 +88,13 @@ static NSString *const CHANNEL_NAME = @"PonnamKarthik/fluttertoast";
 
 
         CSToastStyle *style = [[CSToastStyle alloc] initWithDefaultStyle];
-        style.messageFont = [UIFont systemFontOfSize:cgf];
+        style.messageFont = [UIFont systemFontOfSize:cgf weight: UIFontWeightSemibold];
         style.backgroundColor = [self colorWithHex:bgcolor.unsignedIntegerValue];
         style.messageColor = [self colorWithHex:textcolor.unsignedIntegerValue];
+        style.messageAlignment = NSTextAlignmentCenter;
+        style.cornerRadius = 30.0;
+        style.horizontalPadding = 16;
+        style.verticalPadding = 20;
 
 //        if (@available(iOS 11.0, *)) {
 //            UIWindow *window = UIApplication.sharedApplication.keyWindow;
